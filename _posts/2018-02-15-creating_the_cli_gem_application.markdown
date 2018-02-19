@@ -16,7 +16,7 @@ bundle gem my_first_gem
 
 Now get ready for magic time. CD to your newly created folder and check out the goods. It creates an entire file structure for you, with a gemspec file, an rspec file, a license, version control, even a bin console environment! COOL!! Now all you have to do is...write your entire code for your project, no biggie.
 
-I decided to create a app that scrapes LonelyPlanet for the top 10 travel destinations for 2018. I used the Nokogiri gem for the task. I initially had some trouble scraping their site, and learned a crucial lesson, *don’t try to scrape elements that are rendered via javascript or react!* The elements aren’t loaded until after the scrape is finished, so only returned nil. That only took me about 3 ½ hours of head scratching to figure out. Here is an example of one of my scrape method:
+I decided to create a app that scrapes LonelyPlanet for the top 10 travel destinations for 2018. I used the Nokogiri gem for the task. I initially had some trouble scraping their site, and learned a crucial lesson, *don’t try to scrape elements that are rendered via javascript or react!* The elements aren’t loaded until after the scrape is finished, so only returned nil. That only took me about 3 ½ hours of head scratching to figure out. Here is an example of one of my scrape methods:
 
 ```
 def self.scrape
@@ -39,7 +39,7 @@ I created Classes for Countries, Cities, Regions, and Best Value destinations. E
 
    The interface asks the user to choose a category, then a sub category, then returns a description and a link. I used another gem, colorize, to keep the interface color coded, a pretty cool gem for CLI apps. Here is what the CLI looks like, although color won't come through :(
 	 
-	 ```
+```
 	 Top 10 Travel Destinations for 2018
 	-----------------------------------
 	You can search by:
@@ -77,9 +77,9 @@ I created Classes for Countries, Cities, Regions, and Best Value destinations. E
 	for more information visit: https://www.lonelyplanet.com/australia/australian-capital-territory/canberra
 
 	Or 'back'
-	You can type 'main menu' or 'exit' at anytime
-	 ```
+	You can type 'main menu' or 'exit' at anytime```
 	 
+
 	 Seemed simple enough when I started, but took me about 8 hours, haha. Don’t get me wrong, it was super fun. and really rewarding in the end when everything loaded and worked. I definitely gained a newfound respect for complex applications, and the immense time and effort it takes to create them. 
 
   Thanks for reading!

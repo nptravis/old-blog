@@ -77,8 +77,9 @@ I created Classes for Countries, Cities, Regions, and Best Value destinations. E
 	for more information visit: https://www.lonelyplanet.com/australia/australian-capital-territory/canberra
 
 	Or 'back'
-	You can type 'main menu' or 'exit' at anytime```
-	 
+	You can type 'main menu' or 'exit' at anytime
+```
+
 
 	 Seemed simple enough when I started, but took me about 8 hours, haha. Don’t get me wrong, it was super fun. and really rewarding in the end when everything loaded and worked. I definitely gained a newfound respect for complex applications, and the immense time and effort it takes to create them. 
 

@@ -40,6 +40,7 @@ I created Classes for Countries, Cities, Regions, and Best Value destinations. E
    The interface asks the user to choose a category, then a sub category, then returns a description and a link. I used another gem, colorize, to keep the interface color coded, a pretty cool gem for CLI apps. Here is what the CLI looks like, although color won't come through :(
 	 
 ```
+
 	 Top 10 Travel Destinations for 2018
 	-----------------------------------
 	You can search by:
@@ -78,8 +79,7 @@ I created Classes for Countries, Cities, Regions, and Best Value destinations. E
 
 	Or 'back'
 	You can type 'main menu' or 'exit' at anytime
-```
-
+	```
 
 	 Seemed simple enough when I started, but took me about 8 hours, haha. Don’t get me wrong, it was super fun. and really rewarding in the end when everything loaded and worked. I definitely gained a newfound respect for complex applications, and the immense time and effort it takes to create them. 
 

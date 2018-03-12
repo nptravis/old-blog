@@ -44,7 +44,7 @@ permalink:  create_a_sinatra_application_from_scratch
 4\. add version control
 
 
-* First, have/create a github account, go to github.com/new and create your repository, initialize without a readme, as we already have that, and without gitignore or license, we already have license we you can add gitignore later, I named my repository sinatra-project.
+* First, have/create a github account, go to github.com/new and create your repository, initialize without a readme, as we already have that, and without gitignore or license, we already have license and can add gitignore later, I named my repository sinatra-project.
 * Then follow here:
 
 ```
@@ -179,7 +179,7 @@ text-align: center;
 }
 ```
 
-12\. Setup Rakefile, this is used to automate certain tasks, mostly I use it for databse migrations:
+12\. Setup Rakefile, this is used to automate certain tasks, mostly I use it for database migrations:
 ```
 ENV["SINATRA_ENV"] ||= "development"
 

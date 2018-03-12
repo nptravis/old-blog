@@ -196,6 +196,12 @@ Listening on 127.0.0.1:9393
 ```
 -Visit that address in the browser and see your page! Now, you can roll with it however you like, shotgun server will automatically update so you can see changes without having to restart the server, you can shut down shotgun with a simple crtl+c.
 
+14. Lets make sure to git commit and push now, in your terminal:
+```
+git commit -am "Created basic template for project"
+git push
+```
+
 Thanks for reading everyone, hope this helps to get your Sinatra projects up and running!!
 
 

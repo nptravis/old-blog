@@ -5,6 +5,8 @@ date:       2018-03-11 22:49:00 -0400
 permalink:  create_a_sinatra_application_from_scratch
 ---
 
+## **This blog post is currently under construction, trying to fix some formatting issues**
+
 
 Just follow the steps!
 1. In your terminal, cd to where you keep your projects, then create the main directory, then cd into it. In my example my main directory is named sinatra-project.

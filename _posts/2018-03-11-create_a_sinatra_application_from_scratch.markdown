@@ -7,6 +7,25 @@ permalink:  create_a_sinatra_application_from_scratch
 
 
 Just follow the steps!
+1. In your terminal, cd to where you keep your projects, then create the main directory, then cd into it. In my example my main directory is named sinatra-project.
+```
+[code]$ mkdir sinatra-project
+[code]$ cd sinatra-project
+```
+
+2. e
+3. e
+4. e
+5. e
+6. e
+7. e
+8. e
+9. e
+10. e
+11. e
+12. e
+13. e
+14. 
 
 1. In your terminal, cd to where you keep your projects, then create the main directory, then cd into it. In my example my main directory is named sinatra-project.
 ```
@@ -41,7 +60,6 @@ Just follow the steps!
 ```
 
 4. add version control
-5. 
 
 * First, have/create a github account, go to github.com/new and create your repository, initialize without a readme, as we already have that, and without gitignore or license, we already have license we you can add gitignore later, I named my repository sinatra-project.
 * Then follow here:

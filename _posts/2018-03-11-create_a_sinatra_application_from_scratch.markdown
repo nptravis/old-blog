@@ -41,6 +41,7 @@ Just follow the steps!
 ```
 
 4. add version control
+5. 
 
 * First, have/create a github account, go to github.com/new and create your repository, initialize without a readme, as we already have that, and without gitignore or license, we already have license we you can add gitignore later, I named my repository sinatra-project.
 * Then follow here:
@@ -54,6 +55,7 @@ git push -u origin master
 ```
 
 5. Open up your project with your text editor of choice, mine is Sublime, so in terminal I simply type:
+
 ```
 sublime .
 ```

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Create A Sinatra Application from Scratch"
-date:       2018-03-12 02:48:59 +0000
+date:       2018-03-11 22:49:00 -0400
 permalink:  create_a_sinatra_application_from_scratch
 ---
 

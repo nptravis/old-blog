@@ -1,15 +1,15 @@
 # Site settings
-title: 
+title: Nic Travis Codes
 header-img: img/home-bg.png
-email: nptravis@yahoo.com
+email: nptravis@gmail.com
 copyright_name: nptravis
 description: > # this means to ignore newlines until "baseurl:"
-  
+  My blog about coding, thanks for visiting
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  nptravis
 learn_profile: nptravis
-email_username: nptravis@yahoo.com
+email_username: nptravis@gmail.com
 
 # Build settings
 markdown: kramdown

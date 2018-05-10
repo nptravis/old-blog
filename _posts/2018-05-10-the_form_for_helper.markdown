@@ -33,7 +33,7 @@ def new
 end
 ```
 Ok, without further ado, our form_for:
-```html
+```
 <!-- app/views/users/new.html.erb-->
 
 <%= form_for @user do |f| %>
@@ -67,7 +67,7 @@ Here are some methods it gives us access to:
 ```
 There are a bunch, scope them [here](https://apidock.com/rails/ActionView/Helpers/FormHelper/form_for).
 So, let's build a sign up form:
-```html
+```
 <%= form_for @user do |f| %>
 	<p>
 	<%= f.label :username %>
@@ -119,11 +119,11 @@ Holy crap, that is alot of HTML! Gives us some awesome freebies like:
 Here are a few of my favorite methods:
 
 checkboxes:
-```html
+```
 <%= f.check_box :status, :class => "toggle", :checked => true  %>
 ```
 collection of checkboxes:
-```html
+```
 <%= f.collection_check_boxes :id, User.all, :id, :username do |b| %>
 	  <p>
 	  <%= b.label class: "Whatever" %>

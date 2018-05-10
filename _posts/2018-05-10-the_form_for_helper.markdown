@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "The form_for helper"
-date:       2018-05-10 10:52:47 +0000
+date:       2018-05-10 06:52:47 -0400
 permalink:  the_form_for_helper
 ---
 
@@ -33,8 +33,8 @@ def new
 end
 ```
 Ok, without further ado, our form_for:
-```ruby
-# app/views/users/new.html.erb
+```html
+<!-- app/views/users/new.html.erb-->
 
 <%= form_for @user do |f| %>
 	<% binding.pry %>

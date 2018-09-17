@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "My Favorite way to serialize JSON in Rails"
-date:       2018-09-16 15:11:18 +0000
+date:       2018-09-16 11:11:19 -0400
 permalink:  my_favorite_way_to_serialize_json_in_rails
 ---
 
@@ -20,13 +20,13 @@ bundle install
 
 Next generate a serailizer based on an existing model:
 ```
-rails g serializer Posts
+rails g serializer Product
 ```
 
 this creates this:
 ```
 <!-- app/serializers/post_serializer.rb -->
-class PostSerializer < ActiveModel::Serializer
+class ProductSerializer < ActiveModel::Serializer
   attributes :id
 end
 

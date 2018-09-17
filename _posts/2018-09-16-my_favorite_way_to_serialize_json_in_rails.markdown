@@ -38,7 +38,19 @@ class ProductSerializer < ActiveModel::Serializer
   belongs_to :brand
 end
 ```
-Add a nested association:
+BUT! For the association to work you must add another serializer for brand:
+```
+rails g serializer Brand
+```
+and in that serializer:
+```
+class BrandSerializer < ActiveModel::Serializer
+ attributes: :id, :name, :motto
+ has_many :products
+end
+```
+
+Add a nested association, but again must add a serializer for users and reviews:
 ```
 class ProductSerializer < ActiveModel::Serializer
   attributes :id, :name, :price, :category

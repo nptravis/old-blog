@@ -113,6 +113,4 @@ end
 
 ## In Conclusion
 
-I struggled for a while with to_json, which is still good and fast for simple direct associations OR methods, but I never got it to work correctly with a association AND methods. It just didn't seem as flexible, and it may also may be depricated. Although, as of this writing, the active_record_serializers gem is still being developed, it's working swimmingly. Thumbs up! # Enter your title here
-
-The content of your blog post goes here.
+I struggled for a while with to_json, which is still good and fast for simple direct associations OR methods. I never got it to work correctly with associations AND methods. It just didn't seem as flexible, and it says on the rails API dock it may be depricated. Although, as of this writing, the active_record_serializers gem is still being developed, it's working swimmingly so far. Thumbs up! 

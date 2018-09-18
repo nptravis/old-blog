@@ -8,7 +8,7 @@ permalink:  rails_with_js_frontend_project
 
 ### jQuery to the rescue
 
-This profect was super fun. I am now a full believer in the fluidity and grace of jQuery. Having to do all those xhr requests via XMLHttpRequest would have taken way longer, and been much more code. Here are a few things I grew to love about jQuery
+This project was super fun. I am now a full believer in the fluidity and grace of jQuery. Having to do all those xhr requests via XMLHttpRequest would have taken way longer, and been much more code. Here are a few things I grew to love about jQuery
 1. grabbing attributes from a html element
 ```
 let $form = $('#myForm')

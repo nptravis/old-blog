@@ -38,7 +38,9 @@ class ProductSerializer < ActiveModel::Serializer
   belongs_to :brand
 end
 ```
-BUT! For the association to work you must add another serializer for brand:
+For the association to work you must add another serializer for brand:
+
+EDIT: Actually, you don't need the second serializer for it to work, but this will allow you to customize the association sent, trimming back attributes that aren't needed, custom methods, etc....
 ```
 rails g serializer Brand
 ```
@@ -51,6 +53,8 @@ end
 ```
 
 Add a nested association, but again must add a serializer for users and reviews:
+
+EDIT: again not needed, but recommended.
 ```
 class ProductSerializer < ActiveModel::Serializer
   attributes :id, :name, :price, :category

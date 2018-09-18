@@ -54,5 +54,48 @@ Great stuff. In my project I used jQuery a ton, it becomes very fluid and second
 
 It changes my thoughts on app design. Be better to have as much on one page as possible, having all the interactivity using ajax gets and posts, and only redirecting/refreshing when necessary.
 
-That is, until I learn React! Onwards... 
+That is, until I learn React...
+
+### Active Model Serializer
+
+This project really opened my eyes to how serializing works. Basically, the internet is all strings flying around. No objects or variables are sent anywhere, they are all converted into strings before being sent. Now, I made many mistakes while understanding serialization, one was sending un-serialized json only to discover it was just one long string! No keys or values. The other was relying to much on to_json. It workd great for simple things, like serializing one model, with one association/method, but i never got the systax correct for adding methods and associations. So, i finally dug into Active Model Serializer, and it's awesome.
+Here are things I love:
+1. remove unwanted attributes from models you don't need to send:
+```class StudentSerializer < ApplicationSerializer
+  attributes :id
+end
+```
+That will only send ids, which was all I needed, saved alot of time in my request/response cycle. 
+2. easliy attach associations just like you would with a model:
+```
+class CommentSerializer < ApplicationSerializer
+	attributes :content, :id
+	belongs_to :user, serializer: UserSerializer
+	belongs_to :student, serializer: StudentSerializer
+end
+```
+this adds the association, but like before, it is customized with it's own serializer
+3. serialize an entire show view
+```
+class TeacherSerializer < ApplicationSerializer
+	attributes :email, :id, :lastfirst, :show
+	attributes :current_sections
+
+	has_many :sections
+	has_many :students, through: :sections
+
+	def show
+		TeachersController.render(:show, assigns: {teacher: object}, layout: false)
+	end
+
+	def current_sections
+		TeachersController.render(:current_sections, assigns: {teacher: object}, layout: false).squish
+	end
+```
+the show method attached here is rendering the entire shotw.html.erb for the teacher model. Serialized the whole thing, and now I can plop it wherever I want, I dont think that is even possible with to_json.
+Big fan of this pattern.
+
+## Conclusion
+
+Learned a ton with this project. Really feel more comfortable with jQuery, serialization, and rails in general. Was alot of work, but alot of fun. Now on to React, onwards and upwards!
 

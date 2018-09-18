@@ -60,13 +60,15 @@ That is, until I learn React...
 
 This project really opened my eyes to how serializing works. Basically, the internet is all strings flying around. No objects or variables are sent anywhere, they are all converted into strings before being sent. Now, I made many mistakes while understanding serialization, one was sending un-serialized json only to discover it was just one long string! No keys or values. The other was relying to much on to_json. It workd great for simple things, like serializing one model, with one association/method, but i never got the systax correct for adding methods and associations. So, i finally dug into Active Model Serializer, and it's awesome.
 Here are things I love:
-1. remove unwanted attributes from models you don't need to send:
-```class StudentSerializer < ApplicationSerializer
+1. Remove unwanted attributes from models you don't need to send:
+```
+class StudentSerializer < ApplicationSerializer
   attributes :id
 end
 ```
 That will only send ids, which was all I needed, saved alot of time in my request/response cycle. 
-2. easliy attach associations just like you would with a model:
+
+2. Easliy attach associations just like you would with a model:
 ```
 class CommentSerializer < ApplicationSerializer
 	attributes :content, :id
@@ -74,8 +76,9 @@ class CommentSerializer < ApplicationSerializer
 	belongs_to :student, serializer: StudentSerializer
 end
 ```
-this adds the association, but like before, it is customized with it's own serializer
-3. serialize an entire show view
+this adds the association, but as i referenced before, it is customized with it's own serializer
+
+3. Serialize an entire show view
 ```
 class TeacherSerializer < ApplicationSerializer
 	attributes :email, :id, :lastfirst, :show
@@ -97,5 +100,10 @@ Big fan of this pattern.
 
 ## Conclusion
 
+
 Learned a ton with this project. Really feel more comfortable with jQuery, serialization, and rails in general. Was alot of work, but alot of fun. Now on to React, onwards and upwards!
+
+
+
+
 
